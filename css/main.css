@@ -329,4 +329,27 @@ body {
 }
 .alert__close {
   cursor: pointer;
+}
+
+.inventory {
+  margin: 2 vw;
+  padding: 1 vw;
+  width: max(80%, 80vw);
+}
+.inventory__title {
+  margin-bottom: 4px;
+}
+.inventory__form {
+  width: max(80%, 80vw);
+  padding: 1vw;
+  background-color: #c5cae9;
+  line-height: 1.5em;
+  border: 1px solid #3949ab;
+  border-radius: 3px;
+}
+.inventory__form .input {
+  width: 100%;
+}
+.inventory__form .input__label {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */

@@ -20,12 +20,17 @@
 <body class="add">
     <header class="header">
         <img class="header__logo" src="./images/logotipo.png" alt="logotipo de la empresa libros tech importaciones">
-
         <nav class="navbar">
             <ul class="navbar__menu">
-                <li><a class="navbar__item navbar__item--active" href="./index.html">Volver a Inicio</a></li>
-            </ul>
+                <li><a class="navbar__item" href="./index.html">Home</a></li>
+                <li><a class="navbar__item" href="./about.html">Nosotros</a></li>
+                <li><a class="navbar__item" href="./contact.html">Contacto</a></li>
+                <span class="navbar__icon material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </ul>        
         </nav>
+
     </header>
 
     <div class="alert">
@@ -76,27 +81,32 @@
 
                 <div class="input">
                     <label class="input__label" for="id-description1">Descripción Corta</label>
-                    <input class="input__validate" type="text" id="id-description1" name="description1" minlength="5"
-                        maxlength="200" required>
+                    <input class="input__validate" type="text" id="id-description1" name="description1"
+                        placeholder="Escribí una descripción corta" minlength="5" maxlength="200" required>
                     <span class="input__error"></span>
                 </div>
 
                 <div class="input">
                     <label class="input__label" for="id-description2">Descripción Larga</label>
-                    <textarea class="input__text" id="id-description2" name="description2" cols="30" rows="3"
+                    <textarea class="input__text" id="id-description2" name="description2"
+                        placeholder="Escribí una descripción larga (opcional)" cols="30" rows="3"
                         maxlength="1000"></textarea>
                 </div>
 
                 <div class="input">
                     <label class="input__label" for="id-origin0">Origen</label>
-                    <input class="input_radius" type="radio" name="origin" id="id-origin0" value="0" checked>Importado
-                    <input class="input_radius" type="radio" name="origin" id="id-origin1" value="1">Nacional
+                    <br>
+                    <input class="input__radius" type="radio" name="origin" id="id-origin0" value="0" checked>Importado
+                    <br>
+                    <input class="input__radius" type="radio" name="origin" id="id-origin1" value="1">Nacional
                 </div>
 
                 <div class="input">
                     <label class="input__label" for="id-shipping0">Envio Sin Cargo</label>
-                    <input class="input_radius" type="radio" name="shipping" id="id-shipping0" value="0" checked>Si
-                    <input class="input_radius" type="radio" name="shipping" id="id-shipping1" value="1">No
+                    <br>
+                    <input class="input__radius" type="radio" name="shipping" id="id-shipping0" value="0" checked>Si
+                    <br>
+                    <input class="input__radius" type="radio" name="shipping" id="id-shipping1" value="1">No
                 </div>
 
                 <div class="input">
