@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.navbar {
+    grid-area: navbar;
+    padding: 10px;
+    background-color: #b39ddb;
+    border-radius: 5px;
+
+
+    &__menu {
+        display: flex;
+        gap: 1vw;
+    }
+
+    &__item--active {
+        font-weight: bold;
+    }
+
+    &__icon {
+        padding-right: 15px;
+        margin-left: auto;
+    }
+
+}

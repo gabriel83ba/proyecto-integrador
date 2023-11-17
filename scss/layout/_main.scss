@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.main {
+    grid-area: main;
+    background-color: #ede7f6;
+    display: grid;
+
+    .section {
+        width: 100%;
+
+        &--slider {
+            overflow: hidden;
+        }
+
+        &__title {
+            grid-column-start: span 4;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        &--products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1vw;
+        }
+
+        .products {
+            grid-column-start: span 4;
+
+            &__form {
+                display: inline;
+                
+            }
+
+            &__button2 {
+                margin-right: 15px;
+                float: right;             
+            }
+        }
+    }
+
+}

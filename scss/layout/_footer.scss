@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.footer {
+    margin-top: 10px;
+    grid-area: footer;
+    display: grid;
+    place-items: center;
+}

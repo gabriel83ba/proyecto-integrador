@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta página es una tienda de productos">
+    <meta name="keywords"
+        content="tienda, proyecto, proyecto integrador, libros, importaciones, tecnologia, programación, comprar, ofertas, educación, material educativo, libros de tecnología, libros importados, tecnología avanzada, innovación tecnológica, tendencias tecnológicas, desarrollo de software, javascript, inteligencia artificial, ciberseguridad, programación avanzada, css, sass, react, cloud, ciencia de datos, libros tecnológicos extranjeros, electrónica, redes, informática, sistemas">
+    <meta name="author" content="Gabriel Falevich">
+
+    <title>Libros Tech Importaciones - Agregar Producto</title>
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="add">
+    <header class="header">
+        <img class="header__logo" src="./images/logotipo.png" alt="logotipo de la empresa libros tech importaciones">
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li><a class="navbar__item navbar__item--active" href="./index.html">Volver a Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="alert">
+        <p class="alert__text">ALERTA</p>
+        <span class="alert__close material-symbols-outlined">close</span>
+    </div>
+
+    <main class="main">
+        <section class="inventory">
+            <h3 class="inventory__title">Agregar Producto</h3>
+            <form class="inventory__form" action="backend.js" method="POST">
+                <div class="input">
+                    <label class="input__label" for="id-product-name">Nombre del Producto</label>
+                    <input class="input__validate" type="text" id="id-product-name" name="product-name" minlength="5"
+                        maxlength="50" required>
+                    <span class="input__error"></span>
+                </div>
+                <div class="input">
+                    <label class="input__label" for="id-price">Precio en USD</label>
+                    <input class="input__validate" type="number" id="id-price" name="price" min="0" max="1000" required>
+                    <span class="input__error"></span>
+                </div>
+                <div class="input">
+                    <label class="input__label" for="id-stock">Stock</label>
+                    <input class="input__validate" type="number" id="id-stock" name="stock" min="0" max="50" required>
+                    <span class="input__error"></span>
+                </div>
+                <div class="input">
+                    <label class="input__label" for="id-publisher">Editorial</label>
+                    <input class="input__validate" type="text" id="id-publisher" name="publisher" minlength="5"
+                        maxlength="50" required>
+                    <span class="input__error"></span>
+                </div>
+
+                <div class="input">
+                    <label class="input__label" for="id-category">Categoría</label>
+                    <select class="input__category category" name="category" id="id-category" required>
+                        <option class="category__item" value="programacion" selected>Programación</option>
+                        <option class="category__item" value="desarrollo-web">Desarrollo Web</option>
+                        <option class="category__item" value="front-end">Front-End</option>
+                        <option class="category__item" value="back-end">Back-End</option>
+                        <option class="category__item" value="ciberseguridad">Ciberseguridad</option>
+                        <option class="category__item" value="ciencia-de-datos">Ciencia de Datos</option>
+                        <option class="category__item" value="inteligencia-artificial">Inteligencia Artificial</option>
+                        <option class="category__item" value="otra">Otra</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label class="input__label" for="id-description1">Descripción Corta</label>
+                    <input class="input__validate" type="text" id="id-description1" name="description1" minlength="5"
+                        maxlength="200" required>
+                    <span class="input__error"></span>
+                </div>
+
+                <div class="input">
+                    <label class="input__label" for="id-description2">Descripción Larga</label>
+                    <textarea class="input__text" id="id-description2" name="description2" cols="30" rows="3"
+                        maxlength="1000"></textarea>
+                </div>
+
+                <div class="input">
+                    <label class="input__label" for="id-origin0">Origen</label>
+                    <input class="input_radius" type="radio" name="origin" id="id-origin0" value="0" checked>Importado
+                    <input class="input_radius" type="radio" name="origin" id="id-origin1" value="1">Nacional
+                </div>
+
+                <div class="input">
+                    <label class="input__label" for="id-shipping0">Envio Sin Cargo</label>
+                    <input class="input_radius" type="radio" name="shipping" id="id-shipping0" value="0" checked>Si
+                    <input class="input_radius" type="radio" name="shipping" id="id-shipping1" value="1">No
+                </div>
+
+                <div class="input">
+                    <label class="input__label" for="id-image">Subir Imagen</label>
+                    <input class="input__button" type="file" name="image" id="id-image">
+                </div>
+
+                <div class="input">
+                    <input class="input__button" type="button" id="id-save" value="Guardar">
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <span>&copy; 2023 Todos los derechos reservados - Libros Tech Importaciones S.A.</span>
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+
+</html>

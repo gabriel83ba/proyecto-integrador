@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.card {
+    padding: 1vw;
+    background-color: rgb(178, 178, 228);
+    border: 1px solid blue;
+    border-radius: 6px;
+
+    &__image {
+        height: 40vh;
+        border-radius: 3px;
+    }
+
+    &__title {
+        color: #311b92;
+    }
+
+    &__text {
+        font-weight: lighter;
+    }
+
+    &__price {
+        font-weight: bold;
+
+        &::before {
+            content: "USD ";
+        }
+
+
+    }
+}

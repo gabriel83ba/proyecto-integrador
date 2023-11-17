@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta página es una tienda de productos">
+    <meta name="keywords"
+        content="tienda, proyecto, proyecto integrador, libros, importaciones, tecnologia, programación, comprar, ofertas, educación, material educativo, libros de tecnología, libros importados, tecnología avanzada, innovación tecnológica, tendencias tecnológicas, desarrollo de software, javascript, inteligencia artificial, ciberseguridad, programación avanzada, css, sass, react, cloud, ciencia de datos, libros tecnológicos extranjeros, electrónica, redes, informática, sistemas">
+    <meta name="author" content="Gabriel Falevich">
+
+    <title>Libros Tech Importaciones - Contacto</title>
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="contact">
+    <header class="header">
+        <img class="header__logo" src="./images/logotipo.png" alt="logotipo de la empresa libros tech importaciones">
+    
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li><a class="navbar__item" href="./index.html">Home</a></li>
+                <li><a class="navbar__item" href="./about.html">Nosotros</a></li>
+                <li><a class="navbar__item navbar__item--active" href="./contact.html">Contacto</a></li>
+                <span class="navbar__icon material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </ul>
+    
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="consult">
+            <h3 class="consult__title">Dejá tu consulta</h3>
+            <form class="consult__form" action="backend.js" method="POST">
+                <div class="consult__item">
+                    <label class="consult__label" for="id-fullname">Nombre y Apellido</label>
+                    <input class="consult__input" type="text" id="id-fullname" name="fullname" minlength="8" maxlength="35" required
+                        placeholder="Ingresa tu nombre">
+                </div>
+                <div class="consult__item">
+                    <label class="consult__label" for="id-email1">Correo Electronico</label>
+                    <input class="consult__input" type="email" id="id-email1" name="email1" minlength="10" maxlength="50" required
+                        placeholder="Ingresa tu mail">
+                </div>
+                <div class="consult__item">
+                    <label class="consult__label" for="id-consult">Consulta</label>
+                    <textarea class="consult__text" id="id-consult" name="consult" cols="30" rows="3" maxlength="800"
+                        placeholder="Escribí tu consulta"></textarea>
+
+                    <input class="consult__input" type="submit" id="id-submit" value="Enviar Consulta">
+                </div>
+            </form>
+        </section>
+
+        <section class="contactinfo">
+            <h3 class="contactinfo__title">Datos de Contacto</h3>
+            <p class="contactinfo__text">Teléfono: 0800-111-2222</p>
+            <p class="contactinfo__text">Email: <a href="mailto:info@librostech.com.ar">info@librostech.com.ar</a></p>
+            <p class="contactinfo__text">Domicilio: Av. Córdoba 2753, C1187AAB CABA</p>
+            <iframe class="contactinfo__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d690.4281476202036!2d-58.40671661811392!3d-34.59788323861033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8e272f8477%3A0x2ac1bcff8bd048cc!2sAv.%20C%C3%B3rdoba%202753%2C%20C1187AAB%20CABA!5e0!3m2!1sen!2sar!4v1700063582473!5m2!1sen!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <span>&copy; 2023 Todos los derechos reservados - Libros Tech Importaciones S.A.</span>
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+
+</html>

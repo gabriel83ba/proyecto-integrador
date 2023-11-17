@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.alert {
+    width: calc(100% - (2 * 0.25rem));
+    margin: 0.25rem;
+    padding: 0.25rem;
+    border-radius: 0.3rem;
+    display: none;
+    justify-content: space-between;
+    font-size: 0.85rem;
+
+    &--success {
+        background-color: var.$backgroundColorSuccess;
+        border: 1px solid var.$colorOutlineSuccess;
+        color: var.$colorOutlineSuccess;
+        display: flex;
+    }
+
+    &--warning {
+        background-color: var.$backgroundColorWarning;
+        border: 1px solid var.$colorOutlineWarning;
+        color: var.$colorOutlineWarning;
+        display: flex;
+    }
+
+    &--danger {
+        background-color: var.$backgroundColorDanger;
+        border: 1px solid var.$colorOutlineDanger;
+        color: var.$colorOutlineDanger;
+        display: flex;
+    }
+
+    &--disabled {
+        background-color: var.$backgroundColorDisabled;
+        border: 1px solid var.$colorOutlineDisabled;
+        color: var.$colorOutlineDisabled;
+        display: flex;
+    }
+
+    &__close {
+        cursor: pointer;
+    }
+}

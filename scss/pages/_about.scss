@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.about {
+    padding: 5px;
+
+
+    &__title {
+        padding-bottom: 10px;
+    }
+
+    &__card {
+        margin: 10px;
+        padding: 25px;
+        border: 1px solid black;
+        border-radius: 8px;
+        background-color: #e1bee7;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    &__text {
+        width: calc(80% - (10px + 25px));
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: justify;
+
+
+    }
+
+    &__image {
+        width: calc(20vw - (10px + 25px));
+        height: min-content;
+        float: right;
+        border-radius: 7px;
+        box-shadow: 5px 5px 15px var.$colorBoxShadow;
+    }
+
+
+}

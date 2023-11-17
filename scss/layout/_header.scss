@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.header {
+    grid-area: header;
+    
+
+    &__logo {
+        width: 10vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 7px;
+    }
+
+}

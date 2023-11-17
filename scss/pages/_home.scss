@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.home {
+    height: 100vh;
+    width: 100vw;
+}
+
