@@ -39,9 +39,9 @@
     </div>
 
     <main class="main">
-        <section class="inventory">
-            <h3 class="inventory__title">Agregar Producto</h3>
-            <form class="inventory__form" action="backend.js" method="POST">
+        <section class="section">
+            <h3 class="section__title">Agregar Producto</h3>
+            <form class="section__form" action="backend.js" method="POST">
                 <div class="input">
                     <label class="input__label" for="id-product-name">Nombre del Producto</label>
                     <input class="input__validate" type="text" id="id-product-name" name="product-name" minlength="5"
@@ -50,17 +50,17 @@
                 </div>
                 <div class="input">
                     <label class="input__label" for="id-price">Precio en USD</label>
-                    <input class="input__validate" type="number" id="id-price" name="price" min="0" max="1000" required>
+                    <input class="input__validate" type="number" id="id-price" name="price" min="1" max="1000" required>
                     <span class="input__error"></span>
                 </div>
                 <div class="input">
                     <label class="input__label" for="id-stock">Stock</label>
-                    <input class="input__validate" type="number" id="id-stock" name="stock" min="0" max="50" required>
+                    <input class="input__validate" type="number" id="id-stock" name="stock" min="1" max="50" required>
                     <span class="input__error"></span>
                 </div>
                 <div class="input">
                     <label class="input__label" for="id-publisher">Editorial</label>
-                    <input class="input__validate" type="text" id="id-publisher" name="publisher" minlength="5"
+                    <input class="input__validate" type="text" id="id-publisher" name="publisher" minlength="3"
                         maxlength="50" required>
                     <span class="input__error"></span>
                 </div>
@@ -68,7 +68,7 @@
                 <div class="input">
                     <label class="input__label" for="id-category">Categoría</label>
                     <select class="input__category category" name="category" id="id-category" required>
-                        <option class="category__item" value="programacion" selected>Programación</option>
+                        <option class="category__item" value="programacion">Programación</option>
                         <option class="category__item" value="desarrollo-web">Desarrollo Web</option>
                         <option class="category__item" value="front-end">Front-End</option>
                         <option class="category__item" value="back-end">Back-End</option>
@@ -77,6 +77,7 @@
                         <option class="category__item" value="inteligencia-artificial">Inteligencia Artificial</option>
                         <option class="category__item" value="otra">Otra</option>
                     </select>
+                    <span class="input__error"></span>
                 </div>
 
                 <div class="input">
@@ -90,22 +91,18 @@
                     <label class="input__label" for="id-description2">Descripción Larga</label>
                     <textarea class="input__text" id="id-description2" name="description2"
                         placeholder="Escribí una descripción larga (opcional)" cols="30" rows="3"
-                        maxlength="1000"></textarea>
+                        minlength="100" maxlength="1000"></textarea>
                 </div>
 
                 <div class="input">
-                    <label class="input__label" for="id-origin0">Origen</label>
-                    <br>
-                    <input class="input__radius" type="radio" name="origin" id="id-origin0" value="0" checked>Importado
-                    <br>
+                    <label class="input__label" for="id-origin0">Origen</label>                    
+                    <input class="input__radius" type="radio" name="origin" id="id-origin0" value="0" checked>Importado                   
                     <input class="input__radius" type="radio" name="origin" id="id-origin1" value="1">Nacional
                 </div>
 
                 <div class="input">
-                    <label class="input__label" for="id-shipping0">Envio Sin Cargo</label>
-                    <br>
-                    <input class="input__radius" type="radio" name="shipping" id="id-shipping0" value="0" checked>Si
-                    <br>
+                    <label class="input__label" for="id-shipping0">Envio Sin Cargo</label>                    
+                    <input class="input__radius" type="radio" name="shipping" id="id-shipping0" value="0" checked>Si            
                     <input class="input__radius" type="radio" name="shipping" id="id-shipping1" value="1">No
                 </div>
 

@@ -43,31 +43,44 @@
     }
 }
 
-.inventory {
+.section {
     margin: 2 vw;
     padding: 1 vw;
     width: max(80%, 80vw);
-
+    
     &__title {
         margin-bottom: 4px;
     }
 
-
-
     &__form {
-        width: max(80%, 80vw);
+        width: max(50%, 20vw);
         padding: 1vw;
         background-color: var.$backgroundColorForms;
         line-height: 1.5em;
         border: 1px solid var.$borderColorForm;
         border-radius: 3px;
 
-            .input {
-                    width: 100%;
-            
-                    &__label {
-                        margin-right: 10px;
+        .input {
+            width: 100%;
+            margin-bottom: 2vw;
+            display: flex;
+            flex-direction: column;
+
+            &__validate:focus:valid {
+                border: none;
+                outline: 1px solid var.$colorOutlineSuccess;
                     }
-                }
+
+            &__validate:focus:invalid {
+                border: none;
+                outline: 1px solid var.$colorOutlineDanger;
+            }
+
+            &__error {
+                color: var.$textColorDanger;
+                font-size: 0.75rem;
+            }
+
+        }
     }
 }

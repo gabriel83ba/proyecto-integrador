@@ -13,14 +13,14 @@
 
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body class="contact">
     <header class="header">
         <img class="header__logo" src="./images/logotipo.png" alt="logotipo de la empresa libros tech importaciones">
-    
+
         <nav class="navbar">
             <ul class="navbar__menu">
                 <li><a class="navbar__item" href="./index.html">Home</a></li>
@@ -30,30 +30,34 @@
                     shopping_cart
                 </span>
             </ul>
-    
+
         </nav>
     </header>
 
     <main class="main">
-        <section class="consult">
-            <h3 class="consult__title">Dejá tu consulta</h3>
-            <form class="consult__form" action="backend.js" method="POST">
-                <div class="consult__item">
-                    <label class="consult__label" for="id-fullname">Nombre y Apellido</label>
-                    <input class="consult__input" type="text" id="id-fullname" name="fullname" minlength="8" maxlength="35" required
-                        placeholder="Ingresa tu nombre">
+        <section class="section">
+            <h3 class="section__title">Dejá tu consulta</h3>
+            <form class="section__form" action="backend.js" method="POST">
+                <div class="input">
+                    <label class="input__label" for="id-fullname">Nombre y Apellido</label>
+                    <input class="input__validate" type="text" id="id-fullname" name="fullname" minlength="8"
+                        maxlength="50" required placeholder="Ingresa tu nombre">
+                    <span class="input__error"></span>
                 </div>
-                <div class="consult__item">
-                    <label class="consult__label" for="id-email1">Correo Electronico</label>
-                    <input class="consult__input" type="email" id="id-email1" name="email1" minlength="10" maxlength="50" required
-                        placeholder="Ingresa tu mail">
+                <div class="input">
+                    <label class="input__label" for="id-email1">Correo Electronico</label>
+                    <input class="input__validate" type="email" id="id-email1" name="email1" minlength="4"
+                        maxlength="50" placeholder="Ingresa tu mail" required>
+                    <span class="input__error"></span>
                 </div>
-                <div class="consult__item">
-                    <label class="consult__label" for="id-consult">Consulta</label>
-                    <textarea class="consult__text" id="id-consult" name="consult" cols="30" rows="3" maxlength="800"
-                        placeholder="Escribí tu consulta"></textarea>
-
-                    <input class="consult__input" type="submit" id="id-submit" value="Enviar Consulta">
+                <div class="input">
+                    <label class="input__label" for="id-consult">Consulta</label>
+                    <textarea class="input__validate" id="id-consult" name="consult" cols="30" rows="3" minlength="10"
+                        maxlength="800" placeholder="Escribí tu consulta" required></textarea>
+                    <span class="input__error"></span>
+                </div>
+                <div class="input">
+                    <input class="input__button" type="submit" id="id-submit" value="Enviar Consulta">
                 </div>
             </form>
         </section>
