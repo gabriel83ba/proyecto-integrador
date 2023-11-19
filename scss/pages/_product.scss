@@ -14,29 +14,19 @@
         background-color: var.$backgroundColorSuccess;
         border: 1px solid var.$colorOutlineSuccess;
         color: var.$colorOutlineSuccess;
+        font-weight: bold;
         display: flex;
     }
 
-    &--warning {
-        background-color: var.$backgroundColorWarning;
-        border: 1px solid var.$colorOutlineWarning;
-        color: var.$colorOutlineWarning;
-        display: flex;
-    }
 
     &--danger {
         background-color: var.$backgroundColorDanger;
         border: 1px solid var.$colorOutlineDanger;
         color: var.$colorOutlineDanger;
+        font-weight: bold;
         display: flex;
     }
 
-    &--disabled {
-        background-color: var.$backgroundColorDisabled;
-        border: 1px solid var.$colorOutlineDisabled;
-        color: var.$colorOutlineDisabled;
-        display: flex;
-    }
 
     &__close {
         cursor: pointer;

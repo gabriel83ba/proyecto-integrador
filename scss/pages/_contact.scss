@@ -1,2 +1,74 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+
+.alert {
+    width: calc(100% - (2 * 0.25rem));
+    margin: 0.25rem;
+    padding: 0.25rem;
+    border-radius: 0.3rem;
+    display: none;
+    justify-content: space-between;
+    font-size: 0.85rem;
+
+    &--success {
+        background-color: var.$backgroundColorSuccess;
+        border: 1px solid var.$colorOutlineSuccess;
+        color: var.$colorOutlineSuccess;
+        font-weight: bold;
+        display: flex;
+    }
+
+    &--danger {
+        background-color: var.$backgroundColorDanger;
+        border: 1px solid var.$colorOutlineDanger;
+        color: var.$colorOutlineDanger;
+        font-weight: bold;
+        display: flex;
+    }
+
+    &__close {
+        cursor: pointer;
+    }
+}
+
+.section {
+    margin: 2 vw;
+    padding: 1 vw;
+    width: max(80%, 80vw);
+
+    &__title {
+        margin-bottom: 4px;
+    }
+
+    &__form {
+        width: max(50%, 20vw);
+        padding: 1vw;
+        background-color: var.$backgroundColorForms;
+        line-height: 1.5em;
+        border: 1px solid var.$borderColorForm;
+        border-radius: 3px;
+
+        .input {
+            width: 100%;
+            margin-bottom: 2vw;
+            display: flex;
+            flex-direction: column;
+
+            &__validate:focus:valid {
+                border: none;
+                outline: 1px solid var.$colorOutlineSuccess;
+            }
+
+            &__validate:focus:invalid {
+                border: none;
+                outline: 1px solid var.$colorOutlineDanger;
+            }
+
+            &__error {
+                color: var.$textColorDanger;
+                font-size: 0.75rem;
+            }
+
+        }
+    }
+}

@@ -34,6 +34,11 @@
         </nav>
     </header>
 
+    <div class="alert">
+        <p class="alert__text"></p>
+        <a href=""><span class="alert__close material-symbols-outlined">close</span></a>
+    </div>
+
     <main class="main">
         <section class="section">
             <h3 class="section__title">Dejá tu consulta</h3>
@@ -45,14 +50,14 @@
                     <span class="input__error"></span>
                 </div>
                 <div class="input">
-                    <label class="input__label" for="id-email1">Correo Electronico</label>
-                    <input class="input__validate" type="email" id="id-email1" name="email1" minlength="4"
+                    <label class="input__label" for="id-email">Correo Electronico</label>
+                    <input class="input__validate" type="email" id="id-email" name="email" minlength="4"
                         maxlength="50" placeholder="Ingresa tu mail" required>
                     <span class="input__error"></span>
                 </div>
                 <div class="input">
                     <label class="input__label" for="id-consult">Consulta</label>
-                    <textarea class="input__validate" id="id-consult" name="consult" cols="30" rows="3" minlength="10"
+                    <textarea class="input__validate" id="id-consult" name="consult" cols="30" rows="3" minlength="100"
                         maxlength="800" placeholder="Escribí tu consulta" required></textarea>
                     <span class="input__error"></span>
                 </div>

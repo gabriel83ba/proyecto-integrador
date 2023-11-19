@@ -28,14 +28,14 @@
                 <span class="navbar__icon material-symbols-outlined">
                     shopping_cart
                 </span>
-            </ul>        
+            </ul>
         </nav>
 
     </header>
 
     <div class="alert">
-        <p class="alert__text">ALERTA</p>
-        <span class="alert__close material-symbols-outlined">close</span>
+        <p class="alert__text"></p>
+        <a href=""><span class="alert__close material-symbols-outlined">close</span></a>
     </div>
 
     <main class="main">
@@ -55,7 +55,7 @@
                 </div>
                 <div class="input">
                     <label class="input__label" for="id-stock">Stock</label>
-                    <input class="input__validate" type="number" id="id-stock" name="stock" min="1" max="50" required>
+                    <input class="input__validate" type="number" id="id-stock" name="stock" min="1" max="100" required>
                     <span class="input__error"></span>
                 </div>
                 <div class="input">
@@ -77,7 +77,6 @@
                         <option class="category__item" value="inteligencia-artificial">Inteligencia Artificial</option>
                         <option class="category__item" value="otra">Otra</option>
                     </select>
-                    <span class="input__error"></span>
                 </div>
 
                 <div class="input">
@@ -89,20 +88,20 @@
 
                 <div class="input">
                     <label class="input__label" for="id-description2">Descripción Larga</label>
-                    <textarea class="input__text" id="id-description2" name="description2"
-                        placeholder="Escribí una descripción larga (opcional)" cols="30" rows="3"
-                        minlength="100" maxlength="1000"></textarea>
+                    <textarea class="input__validate" id="id-description2" name="description2"
+                        placeholder="Escribí una descripción larga" cols="30" rows="3" minlength="100" maxlength="1000"
+                        required></textarea>
                 </div>
 
                 <div class="input">
-                    <label class="input__label" for="id-origin0">Origen</label>                    
-                    <input class="input__radius" type="radio" name="origin" id="id-origin0" value="0" checked>Importado                   
+                    <label class="input__label" for="id-origin0">Origen</label>
+                    <input class="input__radius" type="radio" name="origin" id="id-origin0" value="0" checked>Importado
                     <input class="input__radius" type="radio" name="origin" id="id-origin1" value="1">Nacional
                 </div>
 
                 <div class="input">
-                    <label class="input__label" for="id-shipping0">Envio Sin Cargo</label>                    
-                    <input class="input__radius" type="radio" name="shipping" id="id-shipping0" value="0" checked>Si            
+                    <label class="input__label" for="id-shipping0">Envio Sin Cargo</label>
+                    <input class="input__radius" type="radio" name="shipping" id="id-shipping0" value="0" checked>Si
                     <input class="input__radius" type="radio" name="shipping" id="id-shipping1" value="1">No
                 </div>
 
