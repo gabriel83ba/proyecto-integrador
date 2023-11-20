@@ -35,11 +35,11 @@
     }
 
     &--remove {
-        @include mix.button-default(white, white, red);
+        @include mix.button-default(var.$backgroundColorLight2, var.$backgroundColorLight2, var.$backgroundColor2);
 
         &:hover,
         &:active {
-            @include mix.button-active(darkred, red, white);
+            @include mix.button-active(var.$backgroundColorDark2, var.$backgroundColor2, var.$backgroundColorLight2);
         }
     }
 

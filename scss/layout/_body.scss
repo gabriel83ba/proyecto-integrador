@@ -4,7 +4,7 @@
 $_padding: 0.5vw;
 
 body {
-    background-color: #ede7f6;
+    background-color: var.$backgroundColorMain;
     display: grid;
     grid-template-areas: 
     "header"
@@ -13,5 +13,5 @@ body {
     "footer";
     gap: 1vw;  
     padding: $_padding;
-    width: calc(100% - (2*$_padding));
+    width: calc(100vw - (2 * $_padding));
 }

@@ -122,7 +122,7 @@ const regexConsult = /^[a-zA-Z0-9]{100,800}$/;
 function validateFullName() {
     if (!regexFullName.test(inputFullName.value)) {
         inputFullName.nextElementSibling.innerText = "Este campo debe tener entre 8 y 50 caracteres.";
-        buttonSave.disabled = true;
+        buttonSubmit.disabled = true;
         alertText.innerText = "Hay campos que requieren su atención.";
         alert.setAttribute("class", "alert alert--danger");
         alertClose.onclick = alert.setAttribute("class", "alert");
@@ -136,7 +136,7 @@ function validateFullName() {
 function validateEmail() {
     if (!regexEmail.test(inputEmail.value)) {
         inputEmail.nextElementSibling.innerText = "El correo electrónico ingresado no es válido.";
-        buttonSave.disabled = true;
+        buttonSubmit.disabled = true;
         alertText.innerText = "Hay campos que requieren su atención.";
         alert.setAttribute("class", "alert alert--danger");
         alertClose.onclick = alert.setAttribute("class", "alert");
@@ -150,7 +150,7 @@ function validateEmail() {
 function validateConsult() {
     if (!regexConsult.test(inputConsult.value)) {
         inputConsult.nextElementSibling.innerText = "Este campo debe tener entre 100 y 800 caracteres.";
-        buttonSave.disabled = true;
+        buttonSubmit.disabled = true;
         alertText.innerText = "Hay campos que requieren su atención.";
         alert.setAttribute("class", "alert alert--danger");
         alertClose.onclick = alert.setAttribute("class", "alert");
@@ -168,3 +168,22 @@ function validateContact() {
 }
 
 buttonSubmit.onclick = validateContact;
+
+/****************************/
+
+const description = document.querySelector(".card__description")
+const buttonShow = document.querySelector(".card__button");
+
+function show() {
+    description.className = "card__description";
+    buttonShow.innerHTML = "Ver más";
+    buttonShow.onclick = hide;
+}
+
+function hide() {
+    description.className = "";
+    buttonShow.innerHTML = "Ver menos";
+    buttonShow.onclick = show;
+}
+
+buttonShow.onclick = hide;

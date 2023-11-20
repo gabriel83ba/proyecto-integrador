@@ -2,9 +2,10 @@
 @use "../abstracts/mixins" as mix;
 
 .card {
+    width: 25vw;
     padding: 1vw;
-    background-color: rgb(178, 178, 228);
-    border: 1px solid blue;
+    background-color: var.$backgroundColorCard;
+    border: 1px solid var.$colorOulineCards;
     border-radius: 6px;
 
     &__image {
@@ -13,11 +14,18 @@
     }
 
     &__title {
-        color: #311b92;
+        color: var.$textColorTitle;
     }
 
     &__text {
         font-weight: lighter;
+    }
+
+    &__description {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
     }
 
     &__price {
@@ -26,7 +34,5 @@
         &::before {
             content: "USD ";
         }
-
-
     }
 }

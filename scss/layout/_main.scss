@@ -3,9 +3,9 @@
 
 .main {
     grid-area: main;
-    background-color: #ede7f6;
+    background-color: var.$backgroundColorMain;
     display: grid;
-
+   
     .section {
         width: 100%;
 
@@ -20,24 +20,29 @@
         }
 
         &--products {
+            width: 100vw;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1 fr);
             gap: 1vw;
         }
 
-        .products {
+        &__products {
             grid-column-start: span 4;
 
             &__form {
                 display: inline;
-                
-            }
-
-            &__button2 {
-                margin-right: 15px;
-                float: right;             
             }
         }
-    }
 
+        &__gallery {
+            width: 100vw;
+            grid-column: 1 / 5;
+            grid-row: 3 / 7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2vw;
+        }
+
+    }
 }

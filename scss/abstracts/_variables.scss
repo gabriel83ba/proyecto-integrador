@@ -1,11 +1,17 @@
-$backgroundColor: rgb(0, 0, 255);
-$backgroundColorDark: rgb(0, 0, 138);
-$backgroundColorLight: rgb(255, 255, 255);
+$backgroundColor:#9c27b0;
+$backgroundColorDark: #4a148c;
+$backgroundColorLight: #f3e5f5;
+$backgroundColor2: #fb8c00;
+$backgroundColorDark2: #e65100;
+$backgroundColorLight2: #ffebee;
 
 $backgroundColorSuccess: #a5d6a7;
 $backgroundColorWarning: #fff59d;
 $backgroundColorDanger: #ef9a9a;
 $backgroundColorDisabled: #e0e0e0;
+$backgroundColorNavbar: #b39ddb;
+$backgroundColorMain: #ede7f6;
+$backgroundColorCard: #B2B2E4;
 
 $backgroundColorForms: #c5cae9;
 
@@ -13,42 +19,15 @@ $colorOutlineSuccess: #28892f;
 $colorOutlineWarning: #f4b042;
 $colorOutlineDanger: #cf3a3a;
 $colorOutlineDisabled: #5d5b5b;
+$colorOulineCards: #311b92;
 
 $textColorSuccess: #1b5e20;
 $textColorWarning: #f9a825;
 $textColorDanger: #b71c1c;
 $textColorDisabled: #424242;
+$textColorTitle: #311b92;
 
 $borderColorForm: #3949ab;
 
 $colorBoxShadow: #212121;
 
-/* 
-// Nombres de variables sugeridas
-$textColorPrimary: #212529;
-$textColorSecondary: #f8f9fa;
-$textColorSuccess: #0f5132;
-$textColorDanger: #842029;
-$textColorWarning: #664d03;
-$textColorDisabled: #41464b;
-
-$backgroundColorPrimary: linear-gradient(#b2ebf2, #26c6da);
-$backgroundColorSecondary: linear-gradient(#e0f7fa, #80deea);
-$backgroundColorSuccess: linear-gradient(#d2e6dc, #b9d7c8);
-$backgroundColorDanger: linear-gradient(#fad7dc, #f5c3c8);
-$backgroundColorWarning: linear-gradient(#fff5d2, #ffebb4);
-$backgroundColorDisabled: linear-gradient(#e6e6eb, #d2d2d7);
-
-$borderColorPrimary: #00838f;
-$borderColorSecondary: #00acc1;
-$borderColorSuccess: #198755;
-$borderColorDanger: #dc3746;
-$borderColorWarning: #ffc30a;
-$borderColorDisabled: #90959d;
-
-$buttonColorPrimary: linear-gradient(#b2ebf2, #26c6da);
-$buttonColorSecondary: linear-gradient(#e0f7fa, #80deea);
-$buttonColorSuccess: linear-gradient(#d2e6dc, #b9d7c8);
-$buttonColorDanger: linear-gradient(#fad7dc, #f5c3c8);
-$buttonColorWarning: linear-gradient(#fff5d2, #ffebb4);
-$buttonColorDisabled: linear-gradient(#e6e6eb, #d2d2d7); */

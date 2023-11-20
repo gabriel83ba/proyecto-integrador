@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
+
 .alert {
     width: calc(100% - (2 * 0.25rem));
     margin: 0.25rem;
@@ -31,44 +32,26 @@
     }
 }
 
-.section {
-    margin: 2 vw;
-    padding: 1 vw;
-    width: max(80%, 80vw);
+.address {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-    &__title {
-        margin-bottom: 4px;
+    &__data {
+        margin-top: 2vh;
+        line-height: 2rem;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
     }
 
-    &__form {
-        width: max(50%, 20vw);
-        padding: 1vw;
-        background-color: var.$backgroundColorForms;
-        line-height: 1.5em;
-        border: 1px solid var.$borderColorForm;
-        border-radius: 3px;
+    &__map {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
 
-        .input {
-            width: 100%;
-            margin-bottom: 2vw;
-            display: flex;
-            flex-direction: column;
-
-            &__validate:focus:valid {
-                border: none;
-                outline: 1px solid var.$colorOutlineSuccess;
-            }
-
-            &__validate:focus:invalid {
-                border: none;
-                outline: 1px solid var.$colorOutlineDanger;
-            }
-
-            &__error {
-                color: var.$textColorDanger;
-                font-size: 0.75rem;
-            }
-
-        }
+    &__map iframe {
+        border: 3px solid var.$backgroundColorDark2;
+        border-radius: 10px;
     }
 }
+

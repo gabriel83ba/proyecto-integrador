@@ -43,8 +43,9 @@
     }
 
     &__form {
-        width: max(50%, 20vw);
+        width: max(80%, 20vw);
         padding: 1vw;
+        margin: 3vh;
         background-color: var.$backgroundColorForms;
         line-height: 1.5em;
         border: 1px solid var.$borderColorForm;
