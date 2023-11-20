@@ -205,7 +205,6 @@ body {
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1 fr);
   gap: 1vw;
 }
 .main .section__products {
@@ -349,8 +348,6 @@ body {
 }
 
 .section {
-  margin: 2 vw;
-  padding: 1 vw;
   width: max(80%, 80vw);
 }
 .section__title {
