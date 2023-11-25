@@ -6,6 +6,8 @@
     padding: 10px;
     background-color: var.$backgroundColorNavbar;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
 
 
     &__menu {

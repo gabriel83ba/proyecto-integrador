@@ -28,7 +28,8 @@
 
         &__products {
             grid-column-start: span 4;
-
+    display: flex;
+        justify-content: space-between;
             &__form {
                 display: inline;
             }

@@ -12,7 +12,8 @@
     <title>Libros Tech Importaciones - Agregar Producto</title>
 
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -24,10 +25,8 @@
                 <li><a class="navbar__item" href="./index.html">Home</a></li>
                 <li><a class="navbar__item" href="./about.html">Nosotros</a></li>
                 <li><a class="navbar__item" href="./contact.html">Contacto</a></li>
-                <span class="navbar__icon material-symbols-outlined">
-                    shopping_cart
-                </span>
             </ul>
+            <span class="navbar__icon material-symbols-outlined">shopping_cart</span>
         </nav>
 
     </header>
@@ -92,14 +91,14 @@
                         required></textarea>
                 </div>
 
-                <div class="input">
-                    <label class="input__label" for="id-origin0">Origen</label>
+                <div class="input input--radius">
+                    <label class="input__label" for="id-origin0">Origen:</label>
                     <input class="input__radius" type="radio" name="origin" id="id-origin0" value="0" checked>Importado
                     <input class="input__radius" type="radio" name="origin" id="id-origin1" value="1">Nacional
                 </div>
 
-                <div class="input">
-                    <label class="input__label" for="id-shipping0">Envio Sin Cargo</label>
+                <div class="input input--radius">
+                    <label class="input__label" for="id-shipping0">Envio Sin Cargo:</label>
                     <input class="input__radius" type="radio" name="shipping" id="id-shipping0" value="0" checked>Si
                     <input class="input__radius" type="radio" name="shipping" id="id-shipping1" value="1">No
                 </div>
@@ -110,7 +109,7 @@
                 </div>
 
                 <div class="input">
-                    <input class="input__button" type="button" id="id-save" value="Guardar">
+                    <input class="input__button2" type="button" id="id-save" value="Guardar">
                 </div>
             </form>
         </section>

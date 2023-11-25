@@ -35,7 +35,7 @@
 
 .section {
     width: max(80%, 80vw);
-    
+
     &__title {
         margin-bottom: 4px;
     }
@@ -55,10 +55,19 @@
             display: flex;
             flex-direction: column;
 
+            &--radius {
+                width: max(40%, 20vw);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+
+
             &__validate:focus:valid {
                 border: none;
                 outline: 1px solid var.$colorOutlineSuccess;
-                    }
+            }
 
             &__validate:focus:invalid {
                 border: none;
