@@ -5,7 +5,7 @@
     grid-area: main;
     background-color: var.$backgroundColorMain;
     display: grid;
-   
+
     .section {
         width: 100%;
 
@@ -13,11 +13,6 @@
             overflow: hidden;
         }
 
-        &__title {
-            grid-column-start: span 4;
-            text-align: center;
-            padding-top: 10px;
-        }
 
         &--products {
             width: 100vw;
@@ -26,12 +21,20 @@
             gap: 1vw;
         }
 
+        &__title {
+            grid-column-start: span 4;
+            text-align: center;
+            padding-top: 10px;
+        }
+
         &__products {
             grid-column-start: span 4;
-    display: flex;
-        justify-content: space-between;
-            &__form {
+            display: flex;
+            justify-content: space-between;
+
+            .products__text {
                 display: inline;
+                width: 30vw;
             }
         }
 

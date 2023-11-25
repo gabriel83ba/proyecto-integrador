@@ -17,10 +17,6 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
 
-<!-- ACLARACIÓN: hago la entrega sabiendo que hay mucho por corregir, incluyendo código JS y SCSS que no funciona como debería;
-le dediqué el mayor tiempo posible e intenté solucionar todo lo que pude. Lo tomo como una experiencia de aprendizaje
-y espero sus comentarios para tratar de entender qué cosas fallaron. Gracias! -->
-
 
 <body class="home">
     <header class="header">
@@ -28,10 +24,10 @@ y espero sus comentarios para tratar de entender qué cosas fallaron. Gracias! -
 
         <nav class="navbar">
             <ul class="navbar__menu">
-                <li><a class="navbar__item navbar__item--active" href="./index.html">Home</a></li>
+                <li><a class="navbar__item navbar__item--active" href="./index.html">Inicio</a></li>
                 <li><a class="navbar__item" href="./about.html">Nosotros</a></li>
-                <li><a class="navbar__item" href="./contact.html">Contacto</a></li>                
-            </ul>     
+                <li><a class="navbar__item" href="./contact.html">Contacto</a></li>
+            </ul>
             <span class="navbar__icon material-symbols-outlined">shopping_cart</span>
         </nav>
     </header>
@@ -60,272 +56,306 @@ y espero sus comentarios para tratar de entender qué cosas fallaron. Gracias! -
                     <input class="products__text" type="text" id="id-find-text" placeholder="Buscá un producto">
                     <input class="products__button1" type="button" value="Buscar">
                 </form>
-                <button class="products__button2" id="id-button-add" type="button" onclick="location.href='./product.html'">Alta de Nuevo Producto</button>
+                <button class="products__button2" id="id-button-add" type="button"
+                    onclick="location.href='./product.html'">Alta de Nuevo Producto</button>
             </div>
             <div class="section__gallery">
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/clean-code.jpg" alt="imagen libro Clean Code">
-                <h4 class="card__title">Clean Code: A Handbook of Agile Software Craftsmanship</h4>
-                <p class="card__text">Autor: Robert C. Martin - 464 páginas</p>
-                <p class="card__description">Incluso el código malo puede funcionar. Pero si el
-                    código no está limpio, puede llevar a una organización de desarrollo a la ruina. Cada año, se
-                    pierden incontables horas y recursos significativos debido a un código mal escrito. Pero no tiene
-                    que ser así. El destacado experto en software Robert C. Martin presenta un paradigma revolucionario
-                    con "Clean Code: A Handbook of Agile Software Craftsmanship" (Código Limpio: Un Manual de Artesanía
-                    de Software Ágil). Martin se ha asociado con sus colegas de Object Mentor para destilar sus mejores
-                    prácticas ágiles de limpiar código "sobre la marcha" en un libro que inculcará en ti los valores de
-                    un artesano del software y te convertirá en un mejor programador, pero solo si trabajas en ello.
-                    Fuente:
-                    https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM/ref=sr_1_1?crid=36BGG4LIGGBK8&keywords=clean+code&qid=1700422117&s=books&sprefix=clean+cod%2Cstripbooks-intl-ship%2C264&sr=1-1
-                </p>
-                <button class="card__button">Ver más</button>
-                <div>
-                    <span class="card__price">40</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/design-patterns.jpg"
-                    alt="imagen de libro Design Patterns">
-                <h4 class="card__title">Design Patterns: Elements of Reusable Object-Oriented Software</h4>
-                <p class="card__text">Autores Varios - 416 páginas</p>
-                <p class="card__description">Capturando una gran cantidad de experiencia sobre el
-                    diseño de software orientado a objetos, cuatro diseñadores de
-                    primer nivel presentan un catálogo de soluciones simples y concisas para problemas de diseño que
-                    suelen surgir con
-                    frecuencia. Previamente no documentados, estos 23 patrones permiten a los diseñadores crear diseños
-                    más flexibles,
-                    elegantes y, en última instancia, reutilizables sin tener que redescubrir las soluciones de diseño
-                    por sí mismos. Los
-                    autores comienzan describiendo qué son los patrones y cómo pueden ayudarte a diseñar software
-                    orientado a objetos. Luego
-                    proceden a nombrar, explicar, evaluar y catalogar sistemáticamente diseños recurrentes en sistemas
-                    orientados a objetos.
-                    Con "Design Patterns" como tu guía, aprenderás cómo estos patrones importantes encajan en el proceso
-                    de desarrollo de
-                    software y cómo puedes aprovecharlos para resolver tus propios problemas de diseño de la manera más
-                    eficiente. Fuente:
-                    https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1?crid=3VJA9TZVPTT2R&keywords=design+patterns+elements+of+reusable+object-oriented+software&qid=1700426477&s=books&sprefix=Design+Patterns%3A+Elements+of+Reusable+Object-Oriented+Software%2Cstripbooks-intl-ship%2C433&sr=1-1
-                </p>
-                <button class="card__button">Ver más</button>
-                <div>
-                    <span class="card__price">39</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/developers-guide.jpg"
-                    alt="imagen de libro complete software developer's career guide">
-                <h4 class="card__title">The Complete Software Developer's Career Guide</h4>
-                <p class="card__text">Autor: John Sonmez - 796 páginas</p>
-                <p class="card__description"> John Sonmez descubrió que el conocimiento técnico por
-                    sí solo no es suficiente para alcanzar el próximo nivel de
-                    ingresos; los desarrolladores necesitan "habilidades blandas" como la capacidad de aprender nuevas
-                    tecnologías,
-                    comunicarse claramente con la dirección y los clientes de consultoría, negociar la mejor tarifa y
-                    unir a los compañeros
-                    de equipo para trabajar hacia un objetivo común. Nadie enseña estas habilidades blandas. Esta guía
-                    contiene estrategias
-                    para todos, desde desarrolladores principiantes hasta seniors, y ofrece orientación incluso para
-                    aquellos
-                    desarrolladores completamente nuevos. Fuente:
-                    https://www.amazon.com/Complete-Software-Developers-Career-Guide/dp/0999081411/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1700426795&sr=1-1
-                </p>
-                <button class="card__button">Ver más</button>
-                <div>
-                    <span class="card__price">33</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/code-complete.jpg" alt="imagen de libro Code Complete">
-                <h4 class="card__title">Code Complete: A Practical Handbook of Software Construction - Segunda Edición
-                </h4>
-                <p class="card__text">Autor: Steve McConnell - 960 páginas</p>
-                <p class="card__description">Ampliamente considerado como una de las mejores guías
-                    prácticas de programación, el "Code Complete" original de Steve
-                    McConnell ha estado ayudando a los desarrolladores a escribir un mejor software durante más de una
-                    década. Ahora, este
-                    libro clásico ha sido completamente actualizado y revisado con prácticas de vanguardia y cientos de
-                    nuevos ejemplos de
-                    código que ilustran el arte y la ciencia de la construcción de software. Capturando el cuerpo de
-                    conocimiento disponible
-                    en investigación, academia y práctica comercial cotidiana, McConnell sintetiza las técnicas más
-                    efectivas y los
-                    principios imprescindibles en orientaciones claras y pragmáticas. No importa cuál sea tu nivel de
-                    experiencia, entorno
-                    de desarrollo o tamaño del proyecto, este libro informará y estimulará tu pensamiento, ayudándote a
-                    construir un código
-                    de la más alta calidad. Fuente:
-                    https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670/ref=sr_1_1?crid=8HCII0ROB7NC&keywords=Code+Complete%3A+A+Practical+Handbook+of+Software+Construction&qid=1700426997&s=books&sprefix=code+complete+a+practical+handbook+of+software+construction%2Cstripbooks-intl-ship%2C210&sr=1-1
-                </p>
-                <button class="card__button">Ver más</button>
-                <div>
-                    <span class="card__price">35</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/pragmatic-programmer.jpg"
-                    alt="imagen de libro The Pragmatic Programmer">
-                <h4 class="card__title">The Pragmatic Programmer - Segunda Edición</h4>
-                <p class="card__text">Autores: David Thomas, Andrew Hunt - 352 páginas</p>
-                <p class="card__description">"El Programador Pragmático" es uno de esos raros libros
-                    de tecnología que leerás, releerás y volverás a leer a lo largo
-                    de los años. Ya seas nuevo en el campo o un profesional experimentado, cada vez obtendrás ideas
-                    frescas. Dave Thomas y
-                    Andy Hunt escribieron la primera edición de este influyente libro en 1999 para ayudar a sus clientes
-                    a crear un software
-                    mejor y redescubrir el placer de programar. Estas lecciones han ayudado a una generación de
-                    programadores a examinar la
-                    esencia misma del desarrollo de software, independientemente de cualquier lenguaje, marco o
-                    metodología en particular, y
-                    la filosofía Pragmática ha dado origen a cientos de libros, screencasts, audiolibros, así como a
-                    miles de carreras y
-                    historias de éxito. Fuente:
-                    https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/ref=sr_1_1?crid=1T385SWCN53CN&keywords=The+Pragmatic+Programmer&qid=1700427140&s=books&sprefix=the+pragmatic+programmer%2Cstripbooks-intl-ship%2C225&sr=1-1
-                </p>
-                <button class="card__button">Ver más</button>
-                <div>
-                    <span class="card__price">36</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/data-structures.jpg"
-                    alt="imagen de libro A Common-Sense Guide to Data Structures and Algorithms">
-                <h4 class="card__title">A Common-Sense Guide to Data Structures and Algorithms - Segunda Edición</h4>
-                <p class="card__text">Autor: Jay Wengrow - 508 páginas</p>
-                <p class="card__description">Los algoritmos y las estructuras de datos son mucho más
-                    que conceptos abstractos. Dominarlos te permite escribir código
-                    que se ejecuta de manera más rápida y eficiente, lo cual es particularmente importante para las
-                    aplicaciones web y
-                    móviles de hoy. Adopta un enfoque práctico de las estructuras de datos y algoritmos, con técnicas y
-                    escenarios del mundo
-                    real que puedes utilizar en tu código de producción diario, con ejemplos en JavaScript, Python y
-                    Ruby. Esta segunda
-                    edición, nueva y revisada, incluye capítulos adicionales sobre recursividad, programación dinámica y
-                    el uso de la
-                    notación Big O en tu trabajo diario. Fuente:
-                    https://www.amazon.com/Common-Sense-Guide-Structures-Algorithms-Second/dp/1680507222/ref=sr_1_1?crid=1F7P4ZMKNTF9U&keywords=A+Common-Sense+Guide+to+Data+Structures+and+Algorithms&qid=1700427329&s=books&sprefix=a+common-sense+guide+to+data+structures+and+algorithms%2Cstripbooks-intl-ship%2C224&sr=1-1
-                </p>
-                <button class="card__button">Ver más</button>
-                <div>
-                    <span class="card__price">40</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/rethinking-productivity.jpg"
-                    alt="imagen de libro Rethinking Productivity in Software Engineering">
-                <h4 class="card__title">Rethinking Productivity in Software Engineering</h4>
-                <p class="card__text">Editores: Caitlin Sadowski, Thomas Zimmermann - 338 páginas</p>
-                <p class="card__description">Este libro incluye capítulos que abordan definiciones y
-                    conceptos fundamentales relacionados con la productividad,
-                    pautas para medir la productividad en contextos específicos, mejores prácticas y trampas, y teorías
-                    y preguntas abiertas
-                    sobre la productividad. Te beneficiarás de los numerosos capítulos cortos, cada uno ofreciendo una
-                    discusión centrada en
-                    un aspecto de la productividad en ingeniería de software. Fuente:
-                    https://www.amazon.com/Rethinking-Productivity-Software-Engineering-Sadowski/dp/1484242203/ref=sr_1_1?crid=1GIKSOLWQY53F&keywords=Rethinking+Productivity+in+Software+Engineering&qid=1700427505&s=books&sprefix=rethinking+productivity+in+software+engineering%2Cstripbooks-intl-ship%2C240&sr=1-1
-                </p>
-                <button class="card__button">Ver más</button>
-                <div>
-                    <span class="card__price">29</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/programming-pearls.jpg"
-                    alt="imagen de libro Programming Pearls">
-                <h4 class="card__title">Programming Pearls - Segunda Edición</h4>
-                <p class="card__text">Autor: Jon Bentley - 256 páginas</p>
-                <p class="card__description">Cuando los programadores enumeran sus libros favoritos,
-                    la colección de "programming pearls" de Jon Bentley suele
-                    incluirse entre los clásicos. Así como las perlas naturales crecen a partir de granos de arena que
-                    irritan a las ostras,
-                    las "programming pearls" han crecido a partir de problemas reales que han irritado a programadores
-                    reales. Con orígenes
-                    más allá de la ingeniería sólida, en el ámbito de la perspicacia y la creatividad, las perlas de
-                    Bentley ofrecen
-                    soluciones únicas e ingeniosas a esos problemas molestos. Ilustrado con programas diseñados tanto
-                    para diversión como
-                    para instrucción, el libro está lleno de descripciones lúcidas y ingeniosas de técnicas prácticas de
-                    programación y
-                    principios fundamentales de diseño. No sorprende en absoluto que "Programming Pearls" haya sido tan
-                    apreciado por
-                    programadores de todos los niveles de experiencia. Fuente:
-                    https://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880/ref=sr_1_1?crid=2LSWLB3AWHI8V&keywords=Programming+Pearls&qid=1700427619&s=books&sprefix=programming+pearls%2Cstripbooks-intl-ship%2C244&sr=1-1
-                </p>
-                <button class="card__button">Ver más</button>
-                <div>
-                    <span class="card__price">31</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/soft-skills.jpg"
-                    alt="imagen de libro Soft Skills: The Software Developer's Life Manual">
-                <h4 class="card__title">Soft Skills: The Software Developer's Life Manual</h4>
-                <p class="card__text">Autor: John Sonmez - 501 páginas</p>
-                <p class="card__description">El éxito como desarrollador de software requiere
-                    habilidad y algo de lo que nadie habla, la mentalidad. Si no estás
-                    planeando tu futuro, terminarás en un trabajo sin salida que odias. El secreto está lejos de la
-                    computadora. John
-                    utiliza un estilo sencillo para enseñar temas que nunca supiste que necesitabas. Esto no es teoría,
-                    está demostrado a
-                    través de resultados que le permitieron retirarse a los 33 años. Fuente:
-                    https://www.amazon.com/Soft-Skills-Software-Developers-Manual/dp/0999081446/ref=sr_1_1?crid=21KEKI9AG03AH&keywords=Soft+Skills%3A+The+Software+Developer%27s+Life+Manual&qid=1700427704&s=books&sprefix=soft+skills+the+software+developer%27s+life+manual%2Cstripbooks-intl-ship%2C210&sr=1-1
-                </p>
-                <button class="card__button">Ver más</button>
-                <div>
-                    <span class="card__price">30</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-            <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/coding-interview.jpg"
-                    alt="imagen de libro Cracking the Coding Interview">
-                <h4 class="card__title">Cracking the Coding Interview - Sexta Edición</h4>
-                <p class="card__text">Autor: Gayle Laakmann McDowell - 687 páginas</p>
-                <p class="card__description">No soy un reclutador. Soy un ingeniero de software. Y
-                    como tal, sé lo que es que te pidan que improvises algoritmos
-                    brillantes en el momento y luego escribas código impecable en un pizarrón. He pasado por esto como
-                    candidato y como
-                    entrevistador. "Cracking the Coding Interview", 6ta Edición, está aquí para ayudarte en este
-                    proceso, enseñándote lo que
-                    necesitas saber y permitiéndote rendir al máximo. He entrenado y entrevistado a cientos de
-                    ingenieros de software. El
-                    resultado es este libro. Fuente:
-                    https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?crid=5GBYO4FR7F8F&keywords=Cracking+the+Coding+Interview&qid=1700427804&s=books&sprefix=cracking+the+coding+interview%2Cstripbooks-intl-ship%2C222&sr=1-1
-                </p>
-                <button class="card__button">Ver más</button>
-                <div>
-                    <span class="card__price">28</span>
-                    <button class="button button--sm button--add">Agregar</button>
-                    <span class="card__counter">0</span>
-                    <button class="button button--sm button--remove">Quitar</button>
-                </div>
-            </figure>
-</div>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/clean-code.jpg" alt="imagen libro Clean Code">
+                    <h4 class="card__title">Clean Code: A Handbook of Agile Software Craftsmanship</h4>
+                    <p class="card__text">Autor: Robert C. Martin - 464 páginas</p>
+                    <p class="card__description">Incluso el código malo puede funcionar. Pero si el
+                        código no está limpio, puede llevar a una organización de desarrollo a la ruina. Cada año, se
+                        pierden incontables horas y recursos significativos debido a un código mal escrito. Pero no
+                        tiene
+                        que ser así. El destacado experto en software Robert C. Martin presenta un paradigma
+                        revolucionario
+                        con "Clean Code: A Handbook of Agile Software Craftsmanship" (Código Limpio: Un Manual de
+                        Artesanía
+                        de Software Ágil). Martin se ha asociado con sus colegas de Object Mentor para destilar sus
+                        mejores
+                        prácticas ágiles de limpiar código "sobre la marcha" en un libro que inculcará en ti los valores
+                        de
+                        un artesano del software y te convertirá en un mejor programador, pero solo si trabajas en ello.
+                        Fuente:
+                        https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM/ref=sr_1_1?crid=36BGG4LIGGBK8&keywords=clean+code&qid=1700422117&s=books&sprefix=clean+cod%2Cstripbooks-intl-ship%2C264&sr=1-1
+                    </p>
+                    <button class="card__button">Ver más</button>
+                    <span class="card__price">40</span><br>
+                    <div class="card__shopping-cart">
+                        <button class="button button--sm button--add">Agregar</button>
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button--remove">Quitar</button>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/design-patterns.jpg"
+                        alt="imagen de libro Design Patterns">
+                    <h4 class="card__title">Design Patterns: Elements of Reusable Object-Oriented Software</h4>
+                    <p class="card__text">Autores Varios - 416 páginas</p>
+                    <p class="card__description">Capturando una gran cantidad de experiencia sobre el
+                        diseño de software orientado a objetos, cuatro diseñadores de
+                        primer nivel presentan un catálogo de soluciones simples y concisas para problemas de diseño que
+                        suelen surgir con
+                        frecuencia. Previamente no documentados, estos 23 patrones permiten a los diseñadores crear
+                        diseños
+                        más flexibles,
+                        elegantes y, en última instancia, reutilizables sin tener que redescubrir las soluciones de
+                        diseño
+                        por sí mismos. Los
+                        autores comienzan describiendo qué son los patrones y cómo pueden ayudarte a diseñar software
+                        orientado a objetos. Luego
+                        proceden a nombrar, explicar, evaluar y catalogar sistemáticamente diseños recurrentes en
+                        sistemas
+                        orientados a objetos.
+                        Con "Design Patterns" como tu guía, aprenderás cómo estos patrones importantes encajan en el
+                        proceso
+                        de desarrollo de
+                        software y cómo puedes aprovecharlos para resolver tus propios problemas de diseño de la manera
+                        más
+                        eficiente. Fuente:
+                        https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1?crid=3VJA9TZVPTT2R&keywords=design+patterns+elements+of+reusable+object-oriented+software&qid=1700426477&s=books&sprefix=Design+Patterns%3A+Elements+of+Reusable+Object-Oriented+Software%2Cstripbooks-intl-ship%2C433&sr=1-1
+                    </p>
+                    <button class="card__button">Ver más</button>
+                    <span class="card__price">39</span><br>
+                    <div class="card__shopping-cart">
+                        <button class="button button--sm button--add">Agregar</button>
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button--remove">Quitar</button>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/developers-guide.jpg"
+                        alt="imagen de libro complete software developer's career guide">
+                    <h4 class="card__title">The Complete Software Developer's Career Guide</h4>
+                    <p class="card__text">Autor: John Sonmez - 796 páginas</p>
+                    <p class="card__description"> John Sonmez descubrió que el conocimiento técnico por
+                        sí solo no es suficiente para alcanzar el próximo nivel de
+                        ingresos; los desarrolladores necesitan "habilidades blandas" como la capacidad de aprender
+                        nuevas
+                        tecnologías,
+                        comunicarse claramente con la dirección y los clientes de consultoría, negociar la mejor tarifa
+                        y
+                        unir a los compañeros
+                        de equipo para trabajar hacia un objetivo común. Nadie enseña estas habilidades blandas. Esta
+                        guía
+                        contiene estrategias
+                        para todos, desde desarrolladores principiantes hasta seniors, y ofrece orientación incluso para
+                        aquellos
+                        desarrolladores completamente nuevos. Fuente:
+                        https://www.amazon.com/Complete-Software-Developers-Career-Guide/dp/0999081411/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1700426795&sr=1-1
+                    </p>
+                    <button class="card__button">Ver más</button>
+                    <span class="card__price">33</span><br>
+                    <div class="card__shopping-cart">
+                        <button class="button button--sm button--add">Agregar</button>
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button--remove">Quitar</button>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/code-complete.jpg"
+                        alt="imagen de libro Code Complete">
+                    <h4 class="card__title">Code Complete: A Practical Handbook of Software Construction - Segunda
+                        Edición
+                    </h4>
+                    <p class="card__text">Autor: Steve McConnell - 960 páginas</p>
+                    <p class="card__description">Ampliamente considerado como una de las mejores guías
+                        prácticas de programación, el "Code Complete" original de Steve
+                        McConnell ha estado ayudando a los desarrolladores a escribir un mejor software durante más de
+                        una
+                        década. Ahora, este
+                        libro clásico ha sido completamente actualizado y revisado con prácticas de vanguardia y cientos
+                        de
+                        nuevos ejemplos de
+                        código que ilustran el arte y la ciencia de la construcción de software. Capturando el cuerpo de
+                        conocimiento disponible
+                        en investigación, academia y práctica comercial cotidiana, McConnell sintetiza las técnicas más
+                        efectivas y los
+                        principios imprescindibles en orientaciones claras y pragmáticas. No importa cuál sea tu nivel
+                        de
+                        experiencia, entorno
+                        de desarrollo o tamaño del proyecto, este libro informará y estimulará tu pensamiento,
+                        ayudándote a
+                        construir un código
+                        de la más alta calidad. Fuente:
+                        https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670/ref=sr_1_1?crid=8HCII0ROB7NC&keywords=Code+Complete%3A+A+Practical+Handbook+of+Software+Construction&qid=1700426997&s=books&sprefix=code+complete+a+practical+handbook+of+software+construction%2Cstripbooks-intl-ship%2C210&sr=1-1
+                    </p>
+                    <button class="card__button">Ver más</button>
+
+                    <span class="card__price">35</span><br>
+                    <div class="card__shopping-cart">
+                        <button class="button button--sm button--add">Agregar</button>
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button--remove">Quitar</button>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/pragmatic-programmer.jpg"
+                        alt="imagen de libro The Pragmatic Programmer">
+                    <h4 class="card__title">The Pragmatic Programmer - Segunda Edición</h4>
+                    <p class="card__text">Autores: David Thomas, Andrew Hunt - 352 páginas</p>
+                    <p class="card__description">"El Programador Pragmático" es uno de esos raros libros
+                        de tecnología que leerás, releerás y volverás a leer a lo largo
+                        de los años. Ya seas nuevo en el campo o un profesional experimentado, cada vez obtendrás ideas
+                        frescas. Dave Thomas y
+                        Andy Hunt escribieron la primera edición de este influyente libro en 1999 para ayudar a sus
+                        clientes
+                        a crear un software
+                        mejor y redescubrir el placer de programar. Estas lecciones han ayudado a una generación de
+                        programadores a examinar la
+                        esencia misma del desarrollo de software, independientemente de cualquier lenguaje, marco o
+                        metodología en particular, y
+                        la filosofía Pragmática ha dado origen a cientos de libros, screencasts, audiolibros, así como a
+                        miles de carreras y
+                        historias de éxito. Fuente:
+                        https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/ref=sr_1_1?crid=1T385SWCN53CN&keywords=The+Pragmatic+Programmer&qid=1700427140&s=books&sprefix=the+pragmatic+programmer%2Cstripbooks-intl-ship%2C225&sr=1-1
+                    </p>
+                    <button class="card__button">Ver más</button>
+                    <span class="card__price">36</span><br>
+                    <div class="card__shopping-cart">
+                        <button class="button button--sm button--add">Agregar</button>
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button--remove">Quitar</button>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/data-structures.jpg"
+                        alt="imagen de libro A Common-Sense Guide to Data Structures and Algorithms">
+                    <h4 class="card__title">A Common-Sense Guide to Data Structures and Algorithms - Segunda Edición
+                    </h4>
+                    <p class="card__text">Autor: Jay Wengrow - 508 páginas</p>
+                    <p class="card__description">Los algoritmos y las estructuras de datos son mucho más
+                        que conceptos abstractos. Dominarlos te permite escribir código
+                        que se ejecuta de manera más rápida y eficiente, lo cual es particularmente importante para las
+                        aplicaciones web y
+                        móviles de hoy. Adopta un enfoque práctico de las estructuras de datos y algoritmos, con
+                        técnicas y
+                        escenarios del mundo
+                        real que puedes utilizar en tu código de producción diario, con ejemplos en JavaScript, Python y
+                        Ruby. Esta segunda
+                        edición, nueva y revisada, incluye capítulos adicionales sobre recursividad, programación
+                        dinámica y
+                        el uso de la
+                        notación Big O en tu trabajo diario. Fuente:
+                        https://www.amazon.com/Common-Sense-Guide-Structures-Algorithms-Second/dp/1680507222/ref=sr_1_1?crid=1F7P4ZMKNTF9U&keywords=A+Common-Sense+Guide+to+Data+Structures+and+Algorithms&qid=1700427329&s=books&sprefix=a+common-sense+guide+to+data+structures+and+algorithms%2Cstripbooks-intl-ship%2C224&sr=1-1
+                    </p>
+                    <button class="card__button">Ver más</button>
+                    <span class="card__price">40</span><br>
+                    <div class="card__shopping-cart">
+                        <button class="button button--sm button--add">Agregar</button>
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button--remove">Quitar</button>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/rethinking-productivity.jpg"
+                        alt="imagen de libro Rethinking Productivity in Software Engineering">
+                    <h4 class="card__title">Rethinking Productivity in Software Engineering</h4>
+                    <p class="card__text">Editores: Caitlin Sadowski, Thomas Zimmermann - 338 páginas</p>
+                    <p class="card__description">Este libro incluye capítulos que abordan definiciones y
+                        conceptos fundamentales relacionados con la productividad,
+                        pautas para medir la productividad en contextos específicos, mejores prácticas y trampas, y
+                        teorías
+                        y preguntas abiertas
+                        sobre la productividad. Te beneficiarás de los numerosos capítulos cortos, cada uno ofreciendo
+                        una
+                        discusión centrada en
+                        un aspecto de la productividad en ingeniería de software. Fuente:
+                        https://www.amazon.com/Rethinking-Productivity-Software-Engineering-Sadowski/dp/1484242203/ref=sr_1_1?crid=1GIKSOLWQY53F&keywords=Rethinking+Productivity+in+Software+Engineering&qid=1700427505&s=books&sprefix=rethinking+productivity+in+software+engineering%2Cstripbooks-intl-ship%2C240&sr=1-1
+                    </p>
+                    <button class="card__button">Ver más</button>
+                    <span class="card__price">29</span><br>
+                    <div class="card__shopping-cart">
+                        <button class="button button--sm button--add">Agregar</button>
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button--remove">Quitar</button>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/programming-pearls.jpg"
+                        alt="imagen de libro Programming Pearls">
+                    <h4 class="card__title">Programming Pearls - Segunda Edición</h4>
+                    <p class="card__text">Autor: Jon Bentley - 256 páginas</p>
+                    <p class="card__description">Cuando los programadores enumeran sus libros favoritos,
+                        la colección de "programming pearls" de Jon Bentley suele
+                        incluirse entre los clásicos. Así como las perlas naturales crecen a partir de granos de arena
+                        que
+                        irritan a las ostras,
+                        las "programming pearls" han crecido a partir de problemas reales que han irritado a
+                        programadores
+                        reales. Con orígenes
+                        más allá de la ingeniería sólida, en el ámbito de la perspicacia y la creatividad, las perlas de
+                        Bentley ofrecen
+                        soluciones únicas e ingeniosas a esos problemas molestos. Ilustrado con programas diseñados
+                        tanto
+                        para diversión como
+                        para instrucción, el libro está lleno de descripciones lúcidas y ingeniosas de técnicas
+                        prácticas de
+                        programación y
+                        principios fundamentales de diseño. No sorprende en absoluto que "Programming Pearls" haya sido
+                        tan
+                        apreciado por
+                        programadores de todos los niveles de experiencia. Fuente:
+                        https://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880/ref=sr_1_1?crid=2LSWLB3AWHI8V&keywords=Programming+Pearls&qid=1700427619&s=books&sprefix=programming+pearls%2Cstripbooks-intl-ship%2C244&sr=1-1
+                    </p>
+                    <button class="card__button">Ver más</button>
+                    <span class="card__price">31</span><br>
+                    <div class="card__shopping-cart">
+                        <button class="button button--sm button--add">Agregar</button>
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button--remove">Quitar</button>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/soft-skills.jpg"
+                        alt="imagen de libro Soft Skills: The Software Developer's Life Manual">
+                    <h4 class="card__title">Soft Skills: The Software Developer's Life Manual</h4>
+                    <p class="card__text">Autor: John Sonmez - 501 páginas</p>
+                    <p class="card__description">El éxito como desarrollador de software requiere
+                        habilidad y algo de lo que nadie habla, la mentalidad. Si no estás
+                        planeando tu futuro, terminarás en un trabajo sin salida que odias. El secreto está lejos de la
+                        computadora. John
+                        utiliza un estilo sencillo para enseñar temas que nunca supiste que necesitabas. Esto no es
+                        teoría,
+                        está demostrado a
+                        través de resultados que le permitieron retirarse a los 33 años. Fuente:
+                        https://www.amazon.com/Soft-Skills-Software-Developers-Manual/dp/0999081446/ref=sr_1_1?crid=21KEKI9AG03AH&keywords=Soft+Skills%3A+The+Software+Developer%27s+Life+Manual&qid=1700427704&s=books&sprefix=soft+skills+the+software+developer%27s+life+manual%2Cstripbooks-intl-ship%2C210&sr=1-1
+                    </p>
+                    <button class="card__button">Ver más</button>
+                    <span class="card__price">30</span><br>
+                    <div class="card__shopping-cart">
+                        <button class="button button--sm button--add">Agregar</button>
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button--remove">Quitar</button>
+                    </div>
+                </figure>
+                <figure class="card card--product">
+                    <img class="card__image" src="./images/gallery/coding-interview.jpg"
+                        alt="imagen de libro Cracking the Coding Interview">
+                    <h4 class="card__title">Cracking the Coding Interview - Sexta Edición</h4>
+                    <p class="card__text">Autor: Gayle Laakmann McDowell - 687 páginas</p>
+                    <p class="card__description">No soy un reclutador. Soy un ingeniero de software. Y
+                        como tal, sé lo que es que te pidan que improvises algoritmos
+                        brillantes en el momento y luego escribas código impecable en un pizarrón. He pasado por esto
+                        como
+                        candidato y como
+                        entrevistador. "Cracking the Coding Interview", 6ta Edición, está aquí para ayudarte en este
+                        proceso, enseñándote lo que
+                        necesitas saber y permitiéndote rendir al máximo. He entrenado y entrevistado a cientos de
+                        ingenieros de software. El
+                        resultado es este libro. Fuente:
+                        https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?crid=5GBYO4FR7F8F&keywords=Cracking+the+Coding+Interview&qid=1700427804&s=books&sprefix=cracking+the+coding+interview%2Cstripbooks-intl-ship%2C222&sr=1-1
+                    </p>
+                    <button class="card__button">Ver más</button>
+                    <span class="card__price">28</span><br>
+                    <div class="card__shopping-cart">
+                        <button class="button button--sm button--add">Agregar</button>
+                        <span class="card__counter">0</span>
+                        <button class="button button--sm button--remove">Quitar</button>
+                    </div>
+                </figure>
+            </div>
         </section>
     </main>
 

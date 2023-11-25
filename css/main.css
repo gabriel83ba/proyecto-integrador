@@ -85,23 +85,46 @@ a:link {
   border-color: #f3e5f5;
   color: #f3e5f5;
 }
+.section .products__button1 {
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+.section .products__button2 {
+  margin-right: 3vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+.card__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-end;
+  margin-bottom: 5px;
+}
 
 .card {
-  width: 25vw;
+  width: 20vw;
   padding: 1vw;
   background-color: #B2B2E4;
   border: 1px solid #311b92;
   border-radius: 6px;
+  display: flex;
+  flex-direction: column;
 }
 .card__image {
   height: 40vh;
+  max-width: fit-content;
+  margin-bottom: 2px;
   border-radius: 3px;
+  place-self: center;
 }
 .card__title {
   color: #311b92;
 }
 .card__text {
-  font-weight: lighter;
+  font-weight: bold;
 }
 .card__description {
   display: -webkit-box;
@@ -113,7 +136,14 @@ a:link {
   font-weight: bold;
 }
 .card__price::before {
-  content: "USD ";
+  content: "USD $";
+}
+.card__counter {
+  font-weight: bold;
+}
+.card__shopping-cart {
+  align-items: flex-end;
+  place-self: center;
 }
 
 .slider {
@@ -186,6 +216,7 @@ body {
   grid-area: footer;
   display: grid;
   place-items: center;
+  text-shadow: 1px 1px 3px black;
 }
 
 .header {
@@ -210,24 +241,25 @@ body {
 .main .section--slider {
   overflow: hidden;
 }
-.main .section__title {
-  grid-column-start: span 4;
-  text-align: center;
-  padding-top: 10px;
-}
 .main .section--products {
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1vw;
 }
+.main .section__title {
+  grid-column-start: span 4;
+  text-align: center;
+  padding-top: 10px;
+}
 .main .section__products {
   grid-column-start: span 4;
   display: flex;
   justify-content: space-between;
 }
-.main .section__products__form {
+.main .section__products .products__text {
   display: inline;
+  width: 30vw;
 }
 .main .section__gallery {
   width: 100vw;
@@ -252,6 +284,7 @@ body {
 }
 .navbar__item--active {
   font-weight: bold;
+  text-shadow: 1px 1px 1px #4a148c;
 }
 .navbar__icon {
   padding-right: 15px;
@@ -268,13 +301,15 @@ body {
 }
 .about__title {
   padding-bottom: 10px;
+  text-align: center;
 }
 .about__card {
   margin: 10px;
   padding: 25px;
   border: 1px solid black;
   border-radius: 8px;
-  background-color: #e1bee7;
+  box-shadow: 1px 1px 2px #4a148c;
+  background-color: #f3e5f5;
   display: flex;
   justify-content: space-between;
 }
@@ -328,6 +363,9 @@ body {
   line-height: 2rem;
   grid-column: 1/2;
   grid-row: 2/3;
+}
+.address--icon {
+  margin-right: 5px;
 }
 .address__map {
   grid-column: 2/3;

@@ -2,15 +2,20 @@
 @use "../abstracts/mixins" as mix;
 
 .card {
-    width: 25vw;
+    width: 20vw;
     padding: 1vw;
     background-color: var.$backgroundColorCard;
     border: 1px solid var.$colorOulineCards;
     border-radius: 6px;
+    display: flex;
+    flex-direction: column;
 
     &__image {
         height: 40vh;
+        max-width: fit-content;
+        margin-bottom: 2px;
         border-radius: 3px;
+        place-self: center;
     }
 
     &__title {
@@ -18,7 +23,7 @@
     }
 
     &__text {
-        font-weight: lighter;
+        font-weight: bold;
     }
 
     &__description {
@@ -32,7 +37,16 @@
         font-weight: bold;
 
         &::before {
-            content: "USD ";
+            content: "USD $";
         }
+    }
+
+    &__counter {
+        font-weight: bold;
+    }
+
+    &__shopping-cart {
+        align-items: flex-end;
+        place-self: center;
     }
 }

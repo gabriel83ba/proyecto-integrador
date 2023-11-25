@@ -70,4 +70,25 @@
             }
         }
     }
+
+    .products__button1 {
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+    }
+
+    .products__button2 {
+        margin-right: 3vw;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+    }
+}
+
+.card__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-bottom: 5px;
+
 }

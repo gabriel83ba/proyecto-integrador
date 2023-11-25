@@ -7,6 +7,7 @@
 
     &__title {
         padding-bottom: 10px;
+        text-align: center;
     }
 
     &__card {
@@ -14,7 +15,8 @@
         padding: 25px;
         border: 1px solid black;
         border-radius: 8px;
-        background-color: #e1bee7;
+        box-shadow: 1px 1px 2px var.$backgroundColorDark;
+        background-color: var.$backgroundColorLight;
         display: flex;
         justify-content: space-between;
 
