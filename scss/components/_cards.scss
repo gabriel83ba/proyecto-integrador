@@ -11,8 +11,8 @@
     flex-direction: column;
 
     &__image {
-        height: 40vh;
-        max-width: fit-content;
+        width: 15vw;
+        height: min-content;
         margin-bottom: 2px;
         border-radius: 3px;
         place-self: center;

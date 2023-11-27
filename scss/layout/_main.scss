@@ -49,3 +49,12 @@
 
     }
 }
+
+@media (max-width: 480px) {
+
+    .section__gallery {
+        width: 90vw;
+        display: flow;
+    }
+    
+}
